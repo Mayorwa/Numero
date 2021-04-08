@@ -1,0 +1,29 @@
+{
+  "name": "numero",
+  "version": "1.0.0",
+  "description": "the official numero landing page",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass assets/scss/main.scss assets/css/main.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mayorwa/Numero.git"
+  },
+  "author": "Mayorwa",
+  "license": "ISC",
+  "dependencies": {
+    "concat": "^1.0.3",
+    "node-sass": "^4.5.3",
+    "npm-run-all": "^4.1.1"
+  },
+  "engines": {
+    "node": "^10"
+  },
+  "bugs": {
+    "url": "https://github.com/Mayorwa/Numero/issues"
+  },
+  "homepage": "https://github.com/Mayorwa/Numero#readme"
+}
