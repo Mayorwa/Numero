@@ -252,6 +252,9 @@
         padding: 150px 0;
         &__details{
             width: 90%;
+            @include respond-to('desktop-xxl'){
+                width: 100%;
+            }
             &-img {
                 background-color: #6D3CC8;
                 width: 100px;
@@ -318,7 +321,7 @@
                     width: 90%;
                     margin-bottom: 20px;
                     box-shadow: 0px 4px 24px 10px rgba(0, 0, 0, 0.05);
-                    @include respond-to('desktop-l'){
+                    @include respond-to('desktop-xxl'){
                         width: 100%;
                     }
                     p{
