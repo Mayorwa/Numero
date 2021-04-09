@@ -1,0 +1,338 @@
+.home{
+    &-gS{
+        background: #F9FAFC;
+        padding: 160px 150px;
+        margin: 100px 0;
+        @include respond-to('desktop-xxl'){
+            padding: 80px 50px;
+        }
+        @include respond-to('lg-mobile'){
+            padding: 50px 0;
+            margin: 20px 0;
+        }
+        h4{
+            font-weight: bold;
+            margin-bottom: 60px;
+            color: #04004D;
+        }
+        &__details{
+            background: #F5F2FD;
+            height: 360px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            @include respond-to('lg-mobile'){
+                height: 240px;
+            }
+            &-inner{
+                width: 78%;
+                margin: 0 auto;
+            }
+            h6{
+                font-size: 38px;
+                font-weight: 400;
+                color: #04004D;
+                text-align: center;
+                @include respond-to('desktop-xxl'){
+                    font-size: 30px;
+                }
+            }
+            &-img{
+                background-color: #6D3CC8;
+                width: 50px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                text-align: center;
+                margin: 0 auto 20px;
+
+                & img{
+                    width: 20px;
+                    height: 20px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    &-stream{
+        height: 700px;
+        @include respond-to('desktop-xxl'){
+            height: 100%;
+        }
+        &__details {
+            margin-top: 40px;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            @include respond-to('lg-mobile'){
+                margin-top: 0;
+                height: 300px;
+            }
+            &-img {
+                background-color: #6D3CC8;
+                width: 100px;
+                height: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                margin-bottom: 60px;
+                @include respond-to('lg-mobile'){
+                    height: 60px;
+                    width: 60px;
+                    margin-bottom: 10px;
+                }
+
+                & img {
+                    width:40px;
+                    height: 40px;
+                    text-align: center;
+                    @include respond-to('lg-mobile'){
+                        height: 30px;
+                        width: 30px;
+                    }
+                }
+            }
+
+            .title{
+                font-weight: bold;
+                color: #04004D;
+                margin-bottom: 60px;
+                @include respond-to('lg-mobile'){
+                    font-size: 40px;
+                    margin-bottom: 10px;
+
+                }
+            }
+
+            .description{
+                font-size: 26px;
+                color: #606060;
+                @include respond-to('lg-mobile'){
+                    font-size: 22px;
+                }
+            }
+        }
+        &__img{
+            height: 700px;
+            @include respond-to('desktop-xxl'){
+                height: 100%;
+            }
+            img{
+                border-top-left-radius: 40px;
+                height: 100%;
+                border-top-right-radius: 40px;
+            }
+        }
+    }
+    &-regProcess{
+        background-color: #F9FAFC;
+        padding: 150px 0;
+        @include respond-to('lg-mobile'){
+            padding: 80px 0;
+        }
+        &__details{
+            height: 450px;
+            background-color: $white;
+            padding: 20px 40px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 24px 10px rgba(0, 0, 0, 0.05);
+            margin-bottom: 20px;
+            @include respond-to('desktop-l'){
+                height: 240px;
+            }
+            img{
+                width: 50px;
+                margin-top: 10px;
+            }
+            h6{
+                color: #000000  ;
+                font-weight: 400;
+                font-size: 30px;
+                line-height: 1.5;
+                margin-top: 40px;
+                @include respond-to('desktop-l'){
+                    margin-top: 20px;
+                    font-size: 20px;
+                }
+                @include respond-to('desktop-xxl'){
+                    font-size: 26px;
+                }
+            }
+            .description{
+                margin-top: 20px;
+                font-size: 28px;
+                color: #6D3CC8;
+                @include respond-to('desktop-xxl'){
+                    font-size: 24px;
+                }
+                @include respond-to('desktop-l'){
+                    font-size: 20px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+    &-why{
+        width: 780px;
+        margin: 0 auto;
+        padding: 120px 0;
+        text-align: center;
+        @include respond-to('lg-mobile'){
+            padding: 80px 0;
+        }
+        @media (max-width: 780px) {
+            width: 100%;
+        }
+        .title{
+            color: #04004D;
+            font-weight: bold;
+            @include respond-to('lg-mobile'){
+                font-size: 36px;
+            }
+        }
+        .description{
+            margin-top: 20px;
+            font-size: 26px;
+            color: #606060;
+            @include respond-to('lg-mobile'){
+                font-size: 22px;
+            }
+        }
+    }
+    &-feature__bg{
+        background: url("../img/body-bg.png");
+        padding: 120px 0;
+        background-size: cover;
+        .set{
+            justify-content: center;
+        }
+    }
+    &-feature{
+        background-color: #F9FAFC;
+        padding: 80px;
+        border-radius: 20px;
+        margin-top: -200px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @include respond-to('mobile'){
+            padding: 20px;
+            margin-top: -150px;
+        }
+        &__details{
+            display: flex;
+            padding: 10px 40px;
+            height: 70px;
+            background-color: #ffffff;
+            flex: 0 0 auto;
+            border-radius: 10px;
+            width: 46%;
+            margin-bottom: 20px;
+            box-shadow: 0px 4px 24px 10px rgba(0, 0, 0, 0.05);
+            @include respond-to('desktop-l'){
+                width: 100%;
+            }
+            p{
+                margin-left: 10px;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 1.05;
+            }
+            img{
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+    &-business{
+        padding: 150px 0;
+        &__details{
+            width: 90%;
+            &-img {
+                background-color: #6D3CC8;
+                width: 100px;
+                height: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                margin-bottom: 60px;
+                @include respond-to('lg-mobile'){
+                    height: 60px;
+                    width: 60px;
+                    margin-bottom: 30px;
+                }
+
+                & img {
+                    width:40px;
+                    height: 40px;
+                    text-align: center;
+                    @include respond-to('lg-mobile'){
+                        height: 30px;
+                        width: 30px;
+                    }
+                }
+            }
+            .title{
+                font-weight: bold;
+                color: #04004D;
+                margin-bottom: 60px;
+                @include respond-to('lg-mobile'){
+                    font-size: 40px;
+                    margin-bottom: 20px;
+
+                }
+            }
+
+            .description{
+                font-size: 26px;
+                color: #606060;
+                line-height: 1.5;
+                @include respond-to('lg-mobile'){
+                    font-size: 22px;
+                }
+            }
+
+            &-feature{
+                margin: 40px 0;
+                background-color: #F9FAFC;
+                padding: 60px;
+                border-radius: 20px;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                @include respond-to('mobile'){
+                    padding: 20px;
+                }
+                &__details{
+                    display: flex;
+                    padding: 10px 40px;
+                    height: 70px;
+                    background-color: #ffffff;
+                    flex: 0 0 auto;
+                    border-radius: 10px;
+                    width: 90%;
+                    margin-bottom: 20px;
+                    box-shadow: 0px 4px 24px 10px rgba(0, 0, 0, 0.05);
+                    @include respond-to('desktop-l'){
+                        width: 100%;
+                    }
+                    p{
+                        margin-left: 10px;
+                        font-size: 20px;
+                        font-weight: 500;
+                        line-height: 1.05;
+                    }
+                    img{
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,325 @@
+.case{
+    --bs-gutter-x: 1.5rem;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) / 2);
+    padding-left: calc(var(--bs-gutter-x) / 2);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.set {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) / -2);
+    margin-left: calc(var(--bs-gutter-x) / -2);
+    & > * {
+        box-sizing: border-box;
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 100%;
+        padding-right: calc(var(--bs-gutter-x) / 2);
+        padding-left: calc(var(--bs-gutter-x) / 2);
+        margin-top: var(--bs-gutter-y);
+    }
+
+}
+
+@include respond-from('small-mobile') {
+    .case{
+        max-width: 540px;
+    }
+
+    .sub--sm {
+        flex: 1 0 0;
+        &--1 {
+            flex: 0 0 auto;
+            width: 8.3333333333%;
+        }
+
+        &--2 {
+            flex: 0 0 auto;
+            width: 16.6666666667%;
+        }
+
+        &--3 {
+            flex: 0 0 auto;
+            width: 25%;
+        }
+
+        &--4 {
+            flex: 0 0 auto;
+            width: 33.3333333333%;
+        }
+
+        &--5 {
+            flex: 0 0 auto;
+            width: 41.6666666667%;
+        }
+
+        &--6 {
+            flex: 0 0 auto;
+            width: 50%;
+        }
+
+        &--7 {
+            flex: 0 0 auto;
+            width: 58.3333333333%;
+        }
+
+        &--8 {
+            flex: 0 0 auto;
+            width: 66.6666666667%;
+        }
+
+        &--9 {
+            flex: 0 0 auto;
+            width: 75%;
+        }
+
+        &--10 {
+            flex: 0 0 auto;
+            width: 83.3333333333%;
+        }
+
+        &--11 {
+            flex: 0 0 auto;
+            width: 91.6666666667%;
+        }
+
+        &--12 {
+            flex: 0 0 auto;
+            width: 100%;
+        }
+    }
+}
+
+@include respond-from('lg-mobile') {
+    .case {
+        max-width: 720px;
+    }
+
+    .sub--md {
+        flex: 1 0 0;
+        &--auto {
+            flex: 0 0 auto;
+            width: auto;
+        }
+
+        &--1 {
+            flex: 0 0 auto;
+            width: 8.3333333333%;
+        }
+
+        &--2 {
+            flex: 0 0 auto;
+            width: 16.6666666667%;
+        }
+
+        &--3 {
+            flex: 0 0 auto;
+            width: 25%;
+        }
+
+        &--4 {
+            flex: 0 0 auto;
+            width: 33.3333333333%;
+        }
+
+        &--5 {
+            flex: 0 0 auto;
+            width: 41.6666666667%;
+        }
+
+        &--6 {
+            flex: 0 0 auto;
+            width: 50%;
+        }
+
+        &--7 {
+            flex: 0 0 auto;
+            width: 58.3333333333%;
+        }
+
+        &--8 {
+            flex: 0 0 auto;
+            width: 66.6666666667%;
+        }
+
+        &--9 {
+            flex: 0 0 auto;
+            width: 75%;
+        }
+
+        &--10 {
+            flex: 0 0 auto;
+            width: 83.3333333333%;
+        }
+
+        &--11 {
+            flex: 0 0 auto;
+            width: 91.6666666667%;
+        }
+
+        &--12 {
+            flex: 0 0 auto;
+            width: 100%;
+        }
+    }
+}
+
+@include respond-from('desktop-l') {
+    .case {
+        max-width: 960px;
+    }
+
+    .sub--lg{
+        &--auto {
+            flex: 0 0 auto;
+            width: auto;
+        }
+
+        &--1 {
+            flex: 0 0 auto;
+            width: 8.3333333333%;
+        }
+
+        &--2 {
+            flex: 0 0 auto;
+            width: 16.6666666667%;
+        }
+
+        &--3 {
+            flex: 0 0 auto;
+            width: 25%;
+        }
+
+        &--4 {
+            flex: 0 0 auto;
+            width: 33.3333333333%;
+        }
+
+        &--5 {
+            flex: 0 0 auto;
+            width: 41.6666666667%;
+        }
+
+        &--6 {
+            flex: 0 0 auto;
+            width: 50%;
+        }
+
+        &--7 {
+            flex: 0 0 auto;
+            width: 58.3333333333%;
+        }
+
+        &--8 {
+            flex: 0 0 auto;
+            width: 66.6666666667%;
+        }
+
+        &--9 {
+            flex: 0 0 auto;
+            width: 75%;
+        }
+
+        &--10 {
+            flex: 0 0 auto;
+            width: 83.3333333333%;
+        }
+
+        &--11 {
+            flex: 0 0 auto;
+            width: 91.6666666667%;
+        }
+
+        &--12 {
+            flex: 0 0 auto;
+            width: 100%;
+        }
+    }
+}
+
+@include respond-from('desktop-xl') {
+    .case {
+        max-width: 1140px;
+    }
+
+    .sub--xl {
+        flex: 1 0 0;
+        &--auto {
+            flex: 0 0 auto;
+            width: auto;
+        }
+
+        &--1 {
+            flex: 0 0 auto;
+            width: 8.3333333333%;
+        }
+
+        &--2 {
+            flex: 0 0 auto;
+            width: 16.6666666667%;
+        }
+
+        &--3 {
+            flex: 0 0 auto;
+            width: 25%;
+        }
+
+        &--4 {
+            flex: 0 0 auto;
+            width: 33.3333333333%;
+        }
+
+        &--5 {
+            flex: 0 0 auto;
+            width: 41.6666666667%;
+        }
+
+        &--6 {
+            flex: 0 0 auto;
+            width: 50%;
+        }
+
+        &--7 {
+            flex: 0 0 auto;
+            width: 58.3333333333%;
+        }
+
+        &--8 {
+            flex: 0 0 auto;
+            width: 66.6666666667%;
+        }
+
+        &--9 {
+            flex: 0 0 auto;
+            width: 75%;
+        }
+
+        &--10 {
+            flex: 0 0 auto;
+            width: 83.3333333333%;
+        }
+
+        &--11 {
+            flex: 0 0 auto;
+            width: 91.6666666667%;
+        }
+
+        &--12 {
+            flex: 0 0 auto;
+            width: 100%;
+        }
+    }
+
+}
+
+@include respond-from('desktop-xxl') {
+    .case {
+        max-width: 1480px;
+    }
+}

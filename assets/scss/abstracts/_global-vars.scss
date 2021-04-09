@@ -1,0 +1,44 @@
+//
+// FONT FAMILIES
+//
+
+@font-face {
+    font-family: "TTC";
+    src: url("../fonts/tt-common/TTCommons-ExtraLight.ttf");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "TTC";
+    src: url("../fonts/tt-common/TTCommons-Thin.ttf");
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "TTC";
+    src: url("../fonts/tt-common/TTCommons-Light.ttf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "TTC";
+    src: url("../fonts/tt-common/TTCommons-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "TTC";
+    src: url("../fonts/tt-common/TTCommons-Medium.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "TTC";
+    src: url("../fonts/tt-common/TTCommons-Bold.ttf");
+    font-weight: 600;
+}
+
+// Fonts
+// -------------------------
+
+$font-1: 'TTC';

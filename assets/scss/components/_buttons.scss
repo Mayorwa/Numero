@@ -1,0 +1,55 @@
+.button {
+    cursor: pointer;
+    outline: none;
+    align-items: center;
+    padding: 17px 26px;
+    border-radius: 9px;
+    background: $blue-2;
+    color: $grey-light-1;
+    letter-spacing: 1.75px;
+    line-height: 20px;
+    font-size: 18px;
+    font-family: $font-1;
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+    text-align: center;
+    transition: color 0.3s $ease-out-quad, background-color 0.3s $ease-out-quad,
+    border-color 0.3s $ease-out-quad, box-shadow 0.3s $ease-out-quad;
+
+    &:hover {
+        text-decoration: none;
+        background-color: $green-light;
+
+        .icon.caret-right {
+            transform: translateX(4px)
+        }
+    }
+
+    .icon {
+        display: inline-block;
+        transition: fill 0.3s $ease-out-quad, transform 0.3s $ease-out-quad;
+    }
+
+    &--black {
+        background-color: $black-3;
+        color: white;
+
+        .icon {
+            fill: white;
+        }
+
+        &:hover {
+            color: white;
+
+            .icon {
+                fill: white;
+            }
+        }
+    }
+
+    &--purple {
+        background-color: #6D3CC8;
+        color: $white;
+    }
+}
